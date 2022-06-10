@@ -1,0 +1,12 @@
+.dol{
+   /* padding-bottom: 1px; */
+    /* size: 40; */
+    
+}
+.price{
+    display: flex;
+    padding-left: 60px;
+}
+.star{
+    display: flex;
+}

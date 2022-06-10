@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Ecommerce Admin App</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- New Head start -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- New Head End -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  <!-- ======= Header ======= -->
+  <!-- <header id="header" class="fixed-top header-transparent">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-11 d-flex align-items-center">
+          <h1 class="logo mr-auto"><a href="index.html">DKFashion</a></h1>
+
+
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Price View</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="./admin_area/login.html">Login</a>
+
+              </li>
+              <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+          </nav> -->
+  <!-- .nav-menu -->
+  <!-- </div>
+      </div>
+
+    </div>
+  </header> -->
+  <!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+  <!-- <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url(assets/img/intro-carousel/3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">It's Your Fashion World</h2>
+                <p class="animate__animated animate__fadeInUp">DKFashion is make your
+                  life easier. We build your dream a Reality.</p>
+                <a href="./shop.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(assets/img/intro-carousel/4.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">It's Your Fashion World</h2>
+                <p class="animate__animated animate__fadeInUp">DKFashion is make your
+                  life easier. We build your dream a Reality.</p>
+                <a href="./shop.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(assets/img/intro-carousel/5.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">It's Your Fashion World</h2>
+                <p class="animate__animated animate__fadeInUp">DKFashion is make your
+                  life easier. We build your dream a Reality.</p>
+                <a href="./shop.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(assets/img/intro-carousel/1.jpeg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">It's Your Fashion World</h2>
+                <p class="animate__animated animate__fadeInUp">DKFashion is make your
+                  life easier. We build your dream a Reality.</p>
+                <a href="./shop.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(assets/img/intro-carousel/2.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">It's Your Fashion World</h2>
+                <p class="animate__animated animate__fadeInUp">DKFashion is make your
+                  life easier. We build your dream a Reality.</p>
+                <a href="./shop.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section> -->
+  <!-- End Intro Section -->
+
+  <!-- <main id="main"> -->
+
+    <!-- ======= Featured Services Section Section ======= -->
+    <!-- <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-bookmarks-outline"></i>
+            <h4 class="title"><a>Low Range</a></h4>
+            <p class="description" style="text-align: justify;">People can get products under this
+              Price Package. All these are completely Low Prices.</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title"><a>Medium Range</a></h4>
+            <p class="description" style="text-align: justify;">People can get products under this
+              Price Package. All these are completely Medium Prices</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-heart-outline"></i>
+            <h4 class="title"><a>Heigher Range</a></h4>
+            <p class="description" style="text-align: justify;">People can get products under this
+              Price Package. All these are completely Heigher Prices</p>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+    <!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <!-- <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p style="text-align: justify;">We are based on a new brilliant valuable concept of "An analysis of
+            Sri Lankan students’ IT knowledge enhancement by supplying the subscription of IT
+            professionals..." We offers three type of course packages as above with those contents. So, just
+            join with our amazing services.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-col">
+              <div class="img">
+                <img src="./featureImages/11.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p style="text-align: justify; ">
+                IT knowledge is most significant for all students. Students have used to learn via
+                YouTube and websites etc. But, all of these are limited to a boundary. In Sri Lanka,
+                there is no IT knowledge supplying and obtaining Centre, that can be accessed with
+                easily anywhere. So, it is better to establish IT knowledge exchanging Centre as an
+                online service. Then we can confrontation students who are seeking from IT knowledge and
+                IT professionals who would like to give their knowledge as a free and business as well.
+
+
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-col">
+              <div class="img">
+                <img src="./featureImages/3.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <p style="text-align: justify;">
+                Our plan is creating a online platform to enhance students IT knowledge. In Sri Lanka,
+                there is no IT knowledge supplying and obtaining Centre, that can be accessed easily
+                anywhere. So, it is better to establish IT knowledge exchanging Centre as an online
+                service. Then we can confrontation students who are seeking IT knowledge and IT
+                professionals who would like to give their knowledge as a free and business as well. So
+                dont forget to join with us.
+
+
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-col">
+              <div class="img">
+                <img src="./featureImages/2.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p style="text-align: justify; ">
+              <ul>
+                <li>To meet in one place, students who are seeking IT knowledge and IT professionals who
+                  would like to give their knowledge as free and business as well.</li>
+                <li>To enable direct, connect with an IT professional.</li>
+                <li>To remove the gap in distance education.</li>
+                <li>To motivate students, by offering annually gift vouchers and awards.</li>
+                To make an ability to sell knowledge and create assets in an online system
+
+
+
+              </ul>
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Our Services</h3>
+          <p style="text-align: justify;">We think to create a website with a mobile app as a solution for
+            that. There are three role models, such as admin, IT professionals and students. There are
+            signup and login for both students and IT professionals, login is based on face recognition. In
+            here there are three learning packages. Free package, Premium Package and Pro Premium Package
+            are them.
+            Free Package – Students can learn freely
+            Premium Package – Low price courses
+            Pro Premium Package – High price courses
+            IT professionals can upload courses to three of these packages. Students can collect IT
+            knowledge freely or by buying premium or pro premium packages. They can access with the premium
+            package courses after paid to the website. Pro premium package offers a live learning method, if
+            any student wants to buy this package, at first they must send a request to relevant IT
+            professional by messaging. Then IT professional may be ignoring or except it. If he/she except
+            it, a student can order these courses. After student order it, IT professional send a time
+            schedule. In here also payment is making with the website, not to the IT professional. Payment
+            is making physicaly and must send the payment details to admin. In here admin charge some money
+            and other whole balance is paying to the IT professional. After the pro premium course finished,
+            Admin must be held a test. According to this test result, admin must be rate the students. Admin
+            uploads this students’ rates website and to a mobile app that can access both students and IT
+            professional. Website admin organizes an annual award offering function. It is based on the
+            students’ rating. At the end of the year, website admin publishes who, the award winner is. And
+            also add a price gift to the winner’s bank account and sending the award statue through the
+            postal or a delivery system.</p>
+        </header>
+
+
+      </div>
+    </section> -->
+    <!-- End Services Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <!-- <section id="skills">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Our Products</h3>
+
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">Quality <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">Attractive <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">Availability <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">Compatible Price <i class="val">100%</i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Skills Section -->
+
+    <!-- ======= Products Section ======= -->
+    <!-- <section id="portfolio" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Products | Price </h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class=" col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".low">Low Range</li>
+              <li data-filter=".medium">Medium Range</li>
+              <li data-filter=".heigher">Heigher Range</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item low">
+            <div class="portfolio-wrap">
+              <figure>
+                <center><img src="./admin_area/product_images/skirt2.jpg" class="img-fluid" alt="">
+                  <a href="./admin_area/product_images/skirt2.jpg" data-lightbox="portfolio" data-title="App 1"
+                    class="link-preview"><i class="ion ion-eye"></i></a>
+                </center>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Black Pleated | Short Skirt</a></h4>
+                <p>Rs 3000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item medium">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/Shirt.jpg" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/Shirt.jpg"" class=" link-preview venobox"
+                  data-gall="portfolioGallery" title="Web 3"><i class="ion ion-eye"></i></a>
+
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Dark Blue Shirt</a></h4>
+                <p>Rs 4000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item low">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/LongFrock2.jpg" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/LongFrock2.jpg" class="link-preview venobox"
+                  data-gall="portfolioGallery" title="App 2"><i class="ion ion-eye"></i></a>
+
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Bubble | Long Frock</a></h4>
+                <p>Rs 3000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item heigher">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/Tshirt3.jpg" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/Tshirt3.jpg" class="link-preview venobox"
+                  data-gall="portfolioGallery" title="Card 2"><i class="ion ion-eye"></i></a>
+
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Black | White Tshirt</a></h4>
+                <p>Rs 3500</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item low">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/Tshirt4.png" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/Tshirt4.png" class="link-preview venobox"
+                  data-gall="portfolioGallery" title="Web 2"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">White Printed | Tshirt</a></h4>
+                <p>Rs 2500</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item low">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/skirt3.jpg" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/skirt3.jpg" class="link-preview venobox"
+                  data-gall="portfolioGallery" title="App 3"><i class="ion ion-eye"></i></a>
+
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">White Pleated | Short Skirt</a></h4>
+                <p>Rs 4000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item heigher">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/LongFrock3.jpg" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/LongFrock3.jpg" class="link-preview venobox"
+                  data-gall="portfolioGallery" title="Card 1"><i class="ion ion-eye"></i></a>
+
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">White Printed | Long Frock</a></h4>
+                <p>Rs 6000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item low">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/Tshirt2.jpg" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/Tshirt2.jpg" class="link-preview venobox"
+                  data-gall="portfolioGallery" title="Card 3"><i class="ion ion-eye"></i></a>
+
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Green Blue | Tshirt</a></h4>
+                <p>Rs 5500</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item medium">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./admin_area/product_images/skirt4.jpg" class="img-fluid" alt="">
+                <a href="./admin_area/product_images/skirt4.jpg" class="link-preview venobox"
+                  data-gall="portfolioGallery" title="Web 1"><i class="ion ion-eye"></i></a>
+
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Beiged Color | Short Skirt</a></h4>
+                <p>Rs 3500</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Founder</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="assets/img/dar.jpg" class="testimonial-img" alt="">
+            <h3>Darshani Kaushalya Diwakara</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Feel free and lets join with us.
+              <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <!-- <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Our team is very supportive and supply a brilliand service. Feel free and contact us.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/team-6.jpg" class="img-fluid" alt="" style="height: 300px; width: 310px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Mahee Kaushalya</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/team-5.jpg" class="img-fluid" alt="" style="height: 300px; width: 310px; ">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Janudri Kaushalya</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/team-7.jpg" class="img-fluid" alt="" style="height: 300px; width: 310px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Kasun Kaushalya</h4>
+                  <span>Maketing Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/img/team-10.jpg" class="img-fluid" alt="" style="height: 300px; width: 310px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Asini Kaushalya</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          <p>Feel free to contact with us...</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>No 555, Kandy Road, Kurunegala, Sri Lanka</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+94779998888</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">dkfashion@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Contact Section -->
+
+  <!-- </main> -->
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>DKfashion</h3>
+            <p style="text-align: justify;">Since 2004 Netgains has been building fashion e-commerce website
+              & running effective fashion digital marketing campaigns for fast-growing as well as
+              established fashion brands. Our expertise in fashion eCommerce ensures that your brand and
+              products are delivered to your customers in a way that makes them buy. Get in touch today!
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              No 555 <br>
+              Kandy Road, Kurunegala<br>
+              Sri Lanka<br>
+              <strong>Phone:</strong>+94778889999<br>
+              <strong>Email:</strong> dkfashion@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>We will add new products in future . Keep in touch with us</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong>DKFashion</strong>
+      </div>
+      <div class="credits">
+
+        Designed by Kaushalya
+      </div>
+    </div>
+  </footer> -->
+  <!-- End Footer -->
+
+  <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+</body>
+
+</html>

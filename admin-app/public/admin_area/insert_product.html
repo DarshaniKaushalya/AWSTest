@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insert Product</title>
+
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({ selector: 'textarea' });</script>
+    <link href="../assets/img/1.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+        rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        width: 50%;
+        height: 40%;
+        margin: 10px auto;
+        background-color: #fff;
+        border: 2px solid #e6e6e6;
+        padding: 40px 50px;
+    }
+
+    .header {
+        border: 0px solid #000;
+        margin-bottom: 5px;
+    }
+
+    .well {
+        background-color: #187FAB;
+    }
+
+    #signin {
+        width: 60%;
+        border-radius: 30px;
+        color: #ffffff;
+        background-color: #03B277;
+    }
+
+    #signin:hover {
+        background-color: #33CA96;
+    }
+
+    .overlap-text {
+        position: relative;
+    }
+
+    .overlap-text a {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Overpass Mono', monospace;
+        letter-spacing: -1px;
+
+    }
+
+    .well {
+        background-color: #222524;
+    }
+
+    #test {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="well" style="height: 80px;">
+                <!-- <center><h1 style="color: white;">EduZone</h1></center> -->
+
+                <!-- ======= Header ======= -->
+                <header id="header" class="fixed-top header-transparent">
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+                            <div class="col-xl-11 d-flex align-items-center">
+                                <h1 class="logo mr-auto"><a href="../index.html" id="test">DKFashion</a></h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </header><!-- End Header -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Insert product start-->
+
+
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <!--Panel heading start-->
+                    <h3 class="panel-title">
+                        <i class="fa a-money fa-w">Insert Product</i>
+                    </h3>
+                </div>
+                <!--Panel heading end-->
+                <div class="panel-body">
+                    <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Title</label>
+                            <input type="text" name="product_title" class="form-control" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Category</label>
+                            <select name="product_cat" class="form-control">
+                                <option>Select a product category</option>
+                                <option> TShirts</option>
+                                <option> Shirts</option>
+                                <option> Short Frocks</option>
+                                <option> Long Frocks</option>
+                                <option> Short Skirts</option>
+
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Image 1</label>
+                            <input type="file" name="product_img1" class="form-control" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Image 2</label>
+                            <input type="file" name="product_img2" class="form-control" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Image 3</label>
+                            <input type="file" name="product_img3" class="form-control" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Price</label>
+                            <input type="text" name="product_price" class="form-control" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Keywords</label>
+                            <input type="text" name="product_keywords" class="form-control" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Product Description</label>
+                            <textarea name="product_desc" class="form-control" rows="6" cols="19"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" name="submit" value="Insert Product"
+                                class="btn btn-primary form-control">
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--Insert product end-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>DKFashion</h3>
+                        <p>Since 2004 Netgains has been building fashion e-commerce website & running effective fashion
+                            digital marketing campaigns for fast-growing as well as established fashion brands. Our
+                            expertise in fashion eCommerce ensures that your brand and products are delivered to your
+                            customers in a way that makes them buy. Get in touch today!</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            No 555 <br>
+                            Kandy Road, Kurunegala<br>
+                            Sri Lanka<br>
+                            <strong>Phone:</strong>+94778889999<br>
+                            <strong>Email:</strong> eduzone@gmail.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>We will add new products in future . Keep in touch with us</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy;<strong>DKFashion</strong>
+            </div>
+            <div class="credits">
+                <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+                Designed by Kaushalya
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

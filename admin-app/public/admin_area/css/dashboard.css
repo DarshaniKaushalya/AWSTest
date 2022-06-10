@@ -1,0 +1,269 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+    overflow-y: scroll;
+  
+}
+header{
+    position: fixed;
+    background: #030300;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    
+}
+.left h3
+{
+    color: #fff;
+    margin: 0;/*my service line border*/
+    text-transform: uppercase;
+    font-size:22px;
+    font-weight: 900;
+    
+} 
+.left span
+{
+    color: #05B49B;
+}
+
+.lgb
+{
+    padding: 5px;
+    background: #05B49B;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition:0.5s;
+    transition-property:background;
+}
+
+.lgb:hover
+{
+    background:#9B9A0F ;
+}
+
+.sidebar
+{
+    background: #047B71;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}  
+
+.sidebar .pro
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    
+}
+.sidebar h4
+{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:background;
+}
+.sidebar a:hover
+{
+    background: #1ABC9C;
+}
+.sidebar i
+{
+    padding-right: 10px;
+}
+label #sidebtn
+{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+label #sidebtn:hover
+{
+    color: #05B49B; 
+}
+#check:checked ~ .sidebar
+{
+    left:-190px;
+}
+#check:checked ~ .sidebar a span
+{
+    display: none;
+}
+#check:checked ~ .sidebar a
+{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+.content
+{
+    margin-left: 250px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../admin_images/wr3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+#check:checked ~ .content
+{
+    margin-left: 60px;
+}
+#check
+{
+    display: none;
+}
+
+/*-------------Warden-----------------------*/
+
+.warden
+{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height:550px;
+    padding: 80px;
+    background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.8);
+    border-radius: 10px;
+/*   background: linear-gradient(45deg,#0CD8F2,#F2E70C);*/
+/*    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../images/a3.jpg);*/
+
+}
+.warden h1
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    
+}
+.warden .inputBox
+{
+    position: relative;
+}
+.warden .inputBox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing:1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.warden .inputBox label
+{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff; 
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.warden .inputBox input:focus ~ label,
+.warden .inputBox input:valid ~ label 
+{
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+
+}
+.warden input[type='submit']
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #07A393;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+
+    
+}
+.warden input[type='submit']:hover
+{
+    background:  #09F2DB;
+}
+
+.warden input[type='reset']
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #07A393;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+
+    
+}
+.warden input[type='reset']:hover
+{
+background:  #09F2DB;
+}
+
+.home img
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.wrimage h2
+{
+    color: #D7EA11;
+    
+}
+.wrimage table
+{
+    color: #0DEED8;
+}
+#re:hover{
+    color: #000000;
+}
+#su:hover{
+    color: #000000;
+}
+/*-----------------------scroll----------------------*/
