@@ -14,7 +14,7 @@ import NewPage from "./containers/NewPage";
 
 function App() {
   //adding method
-  fetch("http://localhost:2000/", { method: "PUT" });
+  //fetch("http://localhost:2000/", { method: "PUT" });
 
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);

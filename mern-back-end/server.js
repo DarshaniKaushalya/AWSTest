@@ -42,7 +42,7 @@ app.post("/data", (req, res, next) => {
 });
 //Route
 //use renamed as put
-app.put("/", routes);
+app.use("/", routes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
