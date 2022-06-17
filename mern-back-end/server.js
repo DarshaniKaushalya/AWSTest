@@ -41,6 +41,7 @@ app.post("/data", (req, res, next) => {
   });
 });
 //Route
+//use renamed as put
 app.put("/", routes);
 
 app.listen(PORT, () => {
