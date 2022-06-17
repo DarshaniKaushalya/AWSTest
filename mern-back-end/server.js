@@ -17,7 +17,12 @@ const PORT = process.env.PORT;
 connectDatabase();
 
 //cors error solving
-app.use(cors({ origin: "*" }));
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
+  })
+);
 //json format
 app.use(bodyParser.json({ extended: true }));
 
@@ -42,7 +47,7 @@ app.post("/data", (req, res, next) => {
 });
 //Route
 //use renamed as put
-app.use("/", routes);
+app.use("/", cors(), routes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
