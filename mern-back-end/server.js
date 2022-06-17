@@ -16,7 +16,9 @@ const PORT = process.env.PORT;
 //connectDB
 connectDatabase();
 
-app.use(cors());
+//cors error solving
+
+app.use(cors({ origin: "*" }));
 //json format
 app.use(bodyParser.json({ extended: true }));
 
