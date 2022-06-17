@@ -22,7 +22,7 @@ exports.signup = async (req, res) => {
         lastName,
         email,
         hash_password,
-        username: shortid().generate(),
+        username: shortid.generate(),
         role: "admin",
       });
 
