@@ -13,6 +13,9 @@ import Category from "./containers/Category";
 import NewPage from "./containers/NewPage";
 
 function App() {
+  //adding method
+  fetch({ method: "PUT" });
+
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
 

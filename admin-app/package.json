@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
     "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
     "mdbreact": "^4.6.1",
     "react-bootstrap": "^2.2.2",
     "react-checkbox-tree": "^1.7.2",
